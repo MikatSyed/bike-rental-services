@@ -24,7 +24,7 @@ import { cartReducer } from "./Reducers/cartReducer";
 import {
   allOrdersReducer,
   myOrdersReducer,
-  newAppoinmentReducer,
+ 
   newOrderReducer,
   orderDetailsReducer,
   orderReducer,
@@ -38,13 +38,10 @@ const reducer = combineReducers({
   forgotPassword: forgotPasswordReducer,
   cart: cartReducer,
   newOrder: newOrderReducer,
-  // newAppoinment: newAppoinmentReducer,
   myOrders: myOrdersReducer,
   orderDetails: orderDetailsReducer,
   newReview: newReviewReducer,
   newproduct: newproductReducer,
-  blogs: newBlogReducer, 
-  allBlog: blogReducer,
   deleteproduct: deleteproductReducer,
   updateproduct: updateproductReducer,
   allOrders: allOrdersReducer,

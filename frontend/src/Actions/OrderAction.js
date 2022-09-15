@@ -17,9 +17,6 @@ import {
   DELETE_ORDER_REQUEST,
   DELETE_ORDER_SUCCESS,
   DELETE_ORDER_FAIL,
-  CREATE_APPOINMENT_REQUEST,
-  CREATE_APPOINMENT_SUCCESS,
-  CREATE_APPOINMENT_FAIL,
   CLEAR_ERRORS,
 } from "../Constants/OrderConstants";
 import axios from "axios";
@@ -46,27 +43,7 @@ export const createOrder = (order) => async (dispatch) => {
   }
 };
 
-// // Create Appoinment
-// export const createAppoinment = (appoinment) => async (dispatch) => {
-//   try {
-//     dispatch({ type: CREATE_APPOINMENT_REQUEST });
 
-//     const config = {
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//     };
-//     const { data } = await axios.post("/api/v1/appoinment/new", appoinment, config);
-//     console.log(data);
-
-//     dispatch({ type: CREATE_APPOINMENT_SUCCESS, payload: data });
-//   } catch (error) {
-//     dispatch({
-//       type: CREATE_APPOINMENT_FAIL,
-//       payload: error.response.data.message,
-//     });
-//   }
-// };
 
 
 // My Orders

@@ -7,13 +7,17 @@ import Navbar from "../../Header/Navbar";
 
 const OrderSuccess = () => {
   return (
+    <>
+       <Navbar/>
+ 
     <div className="orderSuccess">
-      <Navbar/>
+     
       <CheckCircleIcon />
 
       <Typography>Your Booking has been Placed successfully </Typography>
       <Link to="/orders">View Booking</Link>
     </div>
+    </>
   );
 };
 

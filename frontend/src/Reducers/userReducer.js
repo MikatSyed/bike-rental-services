@@ -39,13 +39,7 @@ import {
   USER_DETAILS_REQUEST,
   USER_DETAILS_SUCCESS,
   USER_DETAILS_FAIL,
-  NEW_BLOG_REQUEST,
-  NEW_BLOG_SUCCESS,
-  NEW_BLOG_FAIL,
-  NEW_BLOG_RESET,
-  ALL_BLOG_REQUEST,
-  ALL_BLOG_SUCCESS,
-  ALL_BLOG_FAIL,
+
 } from "../Constants/UserConstants.js";
 
 export const userReducer = (state = { user: {} }, action) => {
@@ -282,70 +276,3 @@ export const userDetailsReducer = (state = { user: {} }, action) => {
   }
 };
 
-export const newBlogReducer = (state = { blog: {} }, action) => {
-  switch (action.type) {
-    case NEW_BLOG_REQUEST:
-      return {
-        ...state,
-        loading: true,
-      };
-    case NEW_BLOG_SUCCESS:
-      return {
-        loading: false,
-        success: action.payload.success,
-        blog: action.payload.blog,
-      };
-    case NEW_BLOG_FAIL:
-      return {
-        ...state,
-        loading: false,
-        error: action.payload,
-      };
-    case NEW_BLOG_RESET:
-      return {
-        ...state,
-        success: false,
-      };
-    case CLEAR_ERRORS:
-      return {
-        ...state,
-        error: null,
-      };
-    default:
-      return state;
-  }
-};
-
-export const blogReducer = (state = { blog: [] }, action) => {
-  switch (action.type) {
-    case ALL_BLOG_REQUEST:
-      return {
-        loading: true,
-        blogs: [],
-      };
-
-    case ALL_BLOG_SUCCESS:
-      return {
-        loading: false,
-        blogs: action.payload,
-     
-      };
-
-   
-
-    case ALL_BLOG_FAIL:
-  
-      return {
-        loading: false,
-        error: action.payload,
-      };
-
-    case CLEAR_ERRORS:
-      return {
-        ...state,
-        error: null,
-      };
-    default:
-      return state;
-  }
-};

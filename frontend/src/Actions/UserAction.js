@@ -36,13 +36,6 @@ import {
     USER_DETAILS_REQUEST,
     USER_DETAILS_SUCCESS,
     USER_DETAILS_FAIL,
-   NEW_BLOG_REQUEST,
-   NEW_BLOG_SUCCESS,
-   NEW_BLOG_FAIL,
-   NEW_BLOG_RESET,
-   ALL_BLOG_REQUEST,
-   ALL_BLOG_SUCCESS,
-   ALL_BLOG_FAIL,
    CLEAR_ERRORS
   } from "../Constants/UserConstants";
   import axios from "axios";
@@ -256,51 +249,6 @@ export const updateUser = (id, userData) => async (dispatch) => {
   }
 };
 
-
-// // // Create Blog
-export const createBlog = (blogData) => async (dispatch) => {
-  try {
-    dispatch({ type: NEW_BLOG_REQUEST });
-
-    const config = {
-      headers: { "Content-Type": "application/json" },
-    };
-
-    const { data } = await axios.post(
-      `/api/v1/blog/new`,
-      blogData,
-      config
-    );
-console.log(data);
-    dispatch({
-      type: NEW_BLOG_SUCCESS,
-      payload: data,
-    });
-  } catch (error) {
-    dispatch({
-      type: NEW_BLOG_FAIL,
-      payload: error.response.data.message,
-    });
-  }
-};
-
-// Get All Blogs
-export const getAllBlogs = () => async (dispatch) => {
-  try {
-    dispatch({ type: ALL_BLOG_REQUEST})
-    const { data } = await axios.get("/api/v1/blogs");
-console.log(data);
-    dispatch({
-      type: ALL_BLOG_SUCCESS,
-      payload: data.blogs,
-    });
-  } catch (error) {
-    dispatch({
-      type: ALL_BLOG_FAIL,
-      payload: error.response.data.message,
-    });
-  }
-};
 
 // Clearing Errors
 export const clearErrors = () => async (dispatch) => {
