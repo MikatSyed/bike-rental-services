@@ -61,7 +61,7 @@ const Home = () => {
           <div className="service-card">
             <div >
               {products &&
-                products.slice(0,7).map((product) => (   
+                products.map((product) => (   
                   <ServiceMain key={product._id} product={product} />
                 ))}
           

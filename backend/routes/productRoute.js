@@ -9,7 +9,7 @@ const {
   getServiceReviews,
   deleteReview,
   getAdminServices,
-  createBlog,
+ 
   createService
  
 } = require("../controllers/productControler");

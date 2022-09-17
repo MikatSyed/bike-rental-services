@@ -43,7 +43,9 @@ const AllService = ({ match }) => {
     // console.log();
     return state.products;
   });
-  console.log(resultPerPage);
+  console.log(products)
+  console.log('p',productsCount);
+  console.log('d',resultPerPage);
   useEffect(() => {
     dispatch(getproduct(keyword, currentPage, price, category, ratings));
   }, [dispatch, keyword, currentPage, price, category, ratings]);
@@ -52,7 +54,7 @@ const AllService = ({ match }) => {
     setPrice(newPrice);
   };
   let count = filteredproductsCount;
-  console.log(count);
+  console.log('c',count);
   return (
     <Fragment>
       {loading ? (

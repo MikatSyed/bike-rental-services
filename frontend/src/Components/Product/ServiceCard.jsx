@@ -9,6 +9,7 @@ import {
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 export default function ServiceCard({product}) {
+  console.log(product);
   const {
         name,
         images,
@@ -29,12 +30,10 @@ export default function ServiceCard({product}) {
     </CardHeader>
     <CardBody className="text-center">
       <Typography variant="h5" className="mb-2">
-        Cozy {ratings} Stars Apartment
+         { ratings} Stars Service
       </Typography>
       <Typography>
-        The place is close to Barceloneta Beach and bus stop just 2 min by
-        walk and near to "Naviglio" where you can enjoy the main night life in
-        Barcelona.
+       {name}
       </Typography>
     </CardBody>
     <CardFooter divider className="flex items-center justify-between py-3">
