@@ -43,7 +43,7 @@ export default function HeadLine() {
                 <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
               </svg>
 
-              <span className="hidden md:inline">wafi@gmail.com</span>
+              <span className="hidden md:inline">syednew5000@gmail.com</span>
             </p>
           </div>
           <div className="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">

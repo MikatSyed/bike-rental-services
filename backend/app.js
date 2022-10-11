@@ -30,7 +30,7 @@ const product = require("./routes/productRoute");
 const user = require("./routes/userRoute");
 const order = require("./routes/orderRoute");
 const payment = require("./routes/paymentRoute");
-// const newBlog = require("./routes/blogRoute");
+
 
 app.use("/api/v1", product);
 app.use("/api/v1", user);

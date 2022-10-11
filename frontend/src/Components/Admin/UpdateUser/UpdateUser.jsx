@@ -126,7 +126,7 @@ const UpdateUser = ({ history, match }) => {
               <div>
             
               <select onChange={(e) => setWorker(e.target.value)}>
-                <option value="">Choose Status</option>
+                <option value="">Make Bike Owner</option>
                 {workerStatus.map((st) => (
                   <option key={st} value={st}>
                     {st}
