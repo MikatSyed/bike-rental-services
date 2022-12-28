@@ -39,7 +39,7 @@ const About = () => {
               <FacebookIcon className="facebookSvgIcon" />
             </a>
 
-            <a href="https://www.facebook.com/syedmilka.cricket" target="blank">
+            <a href="https://www.instagram.com/invites/contact/?i=9lhmrnri2ebf&utm_content=1gqjf7b" target="blank">
               <InstagramIcon className="instagramSvgIcon" />
             </a>
           </div>

@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
 const path = require("path");
-// const cors = require('cors')
+// const cors = require('cors')  
 
 // app.use(cors({
 //     origin:"http://127.0.0.1:6000",
