@@ -9,7 +9,7 @@ const connectDatabase = require("./config/database")
 // let totalHeapSizeInGB = (totalHeapSize / 1024 / 1024 / 1024).toFixed(2)
 // console.log(totalHeapSizeInGB);
  
-
+    
 //Handling Uncaught Error/Exception
 process.on("uncaughtException",(err)=>{
     console.log(`Error: ${err.message}`);
