@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b00c2c36.css",
+    "main.js": "/static/js/main.6da95d17.js",
+    "static/media/Bike2.jpg": "/static/media/Bike2.ae9bf5e3eb3289895cc1.jpg",
+    "static/media/bike1.jpg": "/static/media/bike1.a90f6849bc66c262b0c7.jpg",
+    "static/media/bike3.jpg": "/static/media/bike3.1048b24fc16eb1bcc7b6.jpg",
+    "static/media/me.jpg": "/static/media/me.e91ba5847e425c2afcb3.jpg",
+    "static/media/Profile.png": "/static/media/Profile.697fdcd21f6d157b9073.png",
+    "static/media/playstore.png": "/static/media/playstore.82b4831979e0ce7c733e.png",
+    "static/media/Appstore.png": "/static/media/Appstore.d0c5839937e3c36285f6.png",
+    "index.html": "/index.html",
+    "main.b00c2c36.css.map": "/static/css/main.b00c2c36.css.map",
+    "main.6da95d17.js.map": "/static/js/main.6da95d17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b00c2c36.css",
+    "static/js/main.6da95d17.js"
+  ]
+}
